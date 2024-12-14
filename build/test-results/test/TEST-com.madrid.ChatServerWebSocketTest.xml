@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.madrid.ChatServerWebSocketTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-14T08:46:35" hostname="XGW2VVRQH3" time="1.452">
+  <properties/>
+  <testcase name="testWebsockerServer()" classname="com.madrid.ChatServerWebSocketTest" time="1.452"/>
+  <system-out><![CDATA[10:46:34,785 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[ELASTIC] - Log destination logstash/<unresolved>:5044: connection failed. java.net.UnknownHostException: logstash
+	at java.net.UnknownHostException: logstash
+	at 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at 	at java.base/java.net.Socket.connect(Socket.java:751)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.openSocket(AbstractLogstashTcpSocketAppender.java:762)
+	at 	at net.logstash.logback.appender.AbstractLogstashTcpSocketAppender$TcpSendingEventHandler.onStart(AbstractLogstashTcpSocketAppender.java:681)
+	at 	at net.logstash.logback.appender.AsyncDisruptorAppender$EventClearingEventHandler.onStart(AsyncDisruptorAppender.java:382)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.notifyStart(BatchEventProcessor.java:224)
+	at 	at net.logstash.logback.encoder.com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:120)
+	at 	at java.base/java.lang.Thread.run(Thread.java:1583)
+10:46:34,788 |-WARN in net.logstash.logback.appender.LogstashTcpSocketAppender[ELASTIC] - Log destination logstash/<unresolved>:5044: Waiting 29995ms before attempting reconnection.
+?[36m10:46:34.891?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment?[0;39m - Established active environments: [test]
+?[36m10:46:35.338?[0;39m ?[1;30m[default-nioEventLoopGroup-1-3]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onOpen received for session JT5naWtUcowYSLsbwZyHAw== from 'adam' regarding 'Cats & Recreation'
+?[36m10:46:35.452?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onOpen received for session W5e+GSZ8tOnhlt/ML1yjjw== from 'anna' regarding 'Cats & Recreation'
+?[36m10:46:35.675?[0;39m ?[1;30m[default-nioEventLoopGroup-1-7]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onOpen received for session XjiCeSaekLrFnRfYcF4G9A== from 'ben' regarding 'Fortran Tips & Tricks'
+?[36m10:46:35.793?[0;39m ?[1;30m[default-nioEventLoopGroup-1-9]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onOpen received for session FyszasFZI7DC6Dl2uDVqeg== from 'zach' regarding 'all'
+?[36m10:46:35.911?[0;39m ?[1;30m[default-nioEventLoopGroup-1-11]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onOpen received for session VCG/Gc0ogmhsiJvrt+2F+g== from 'cienna' regarding 'Fortran Tips & Tricks'
+?[36m10:46:36.149?[0;39m ?[1;30m[default-nioEventLoopGroup-1-3]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onMessage received for session JT5naWtUcowYSLsbwZyHAw== from 'adam' regarding 'Cats & Recreation'
+?[36m10:46:36.470?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onClose received for session W5e+GSZ8tOnhlt/ML1yjjw== from 'anna' regarding 'Cats & Recreation'
+?[36m10:46:36.575?[0;39m ?[1;30m[default-nioEventLoopGroup-1-7]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onClose received for session XjiCeSaekLrFnRfYcF4G9A== from 'ben' regarding 'Fortran Tips & Tricks'
+?[36m10:46:36.575?[0;39m ?[1;30m[default-nioEventLoopGroup-1-3]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onClose received for session JT5naWtUcowYSLsbwZyHAw== from 'adam' regarding 'Cats & Recreation'
+?[36m10:46:36.575?[0;39m ?[1;30m[default-nioEventLoopGroup-1-9]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onClose received for session FyszasFZI7DC6Dl2uDVqeg== from 'zach' regarding 'all'
+?[36m10:46:36.575?[0;39m ?[1;30m[default-nioEventLoopGroup-1-11]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.madrid.ChatServerWebSocket?[0;39m - * WebSocket: onClose received for session VCG/Gc0ogmhsiJvrt+2F+g== from 'cienna' regarding 'Fortran Tips & Tricks'
+?[36m10:46:36.578?[0;39m ?[1;30m[globalEventExecutor-2-2]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.h.s.n.w.NettyServerWebSocketHandler?[0;39m - Error subscribing to @OnClose handler for WebSocket bean [com.madrid.ChatServerWebSocket@4ba06db9]: Broadcast Failure: Broken pipe
+io.micronaut.websocket.exceptions.WebSocketSessionException: Broadcast Failure: Broken pipe
+	at io.micronaut.http.netty.websocket.NettyServerWebSocketBroadcaster.lambda$broadcast$2(NettyServerWebSocketBroadcaster.java:89)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.access$200(DefaultPromise.java:35)
+	at io.netty.util.concurrent.DefaultPromise$1.run(DefaultPromise.java:503)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:262)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:414)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:939)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:957)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1263)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	... 3 common frames omitted
+?[36m10:46:36.580?[0;39m ?[1;30m[globalEventExecutor-2-2]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.h.s.n.w.NettyServerWebSocketHandler?[0;39m - Error subscribing to @OnClose handler for WebSocket bean [com.madrid.ChatServerWebSocket@4ba06db9]: Broadcast Failure: Broken pipe
+io.micronaut.websocket.exceptions.WebSocketSessionException: Broadcast Failure: Broken pipe
+	at io.micronaut.http.netty.websocket.NettyServerWebSocketBroadcaster.lambda$broadcast$2(NettyServerWebSocketBroadcaster.java:89)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.access$200(DefaultPromise.java:35)
+	at io.netty.util.concurrent.DefaultPromise$1.run(DefaultPromise.java:503)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:262)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:414)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:939)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:957)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1263)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	... 3 common frames omitted
+?[36m10:46:36.581?[0;39m ?[1;30m[globalEventExecutor-2-2]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.h.s.n.w.NettyServerWebSocketHandler?[0;39m - Error subscribing to @OnClose handler for WebSocket bean [com.madrid.ChatServerWebSocket@4ba06db9]: Broadcast Failure: Broken pipe
+io.micronaut.websocket.exceptions.WebSocketSessionException: Broadcast Failure: Broken pipe
+	at io.micronaut.http.netty.websocket.NettyServerWebSocketBroadcaster.lambda$broadcast$2(NettyServerWebSocketBroadcaster.java:89)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.access$200(DefaultPromise.java:35)
+	at io.netty.util.concurrent.DefaultPromise$1.run(DefaultPromise.java:503)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:262)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:414)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:939)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:957)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1263)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	... 3 common frames omitted
+?[36m10:46:36.582?[0;39m ?[1;30m[globalEventExecutor-2-2]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.h.s.n.w.NettyServerWebSocketHandler?[0;39m - Error subscribing to @OnClose handler for WebSocket bean [com.madrid.ChatServerWebSocket@4ba06db9]: Broadcast Failure: Broken pipe
+io.micronaut.websocket.exceptions.WebSocketSessionException: Broadcast Failure: Broken pipe
+	at io.micronaut.http.netty.websocket.NettyServerWebSocketBroadcaster.lambda$broadcast$2(NettyServerWebSocketBroadcaster.java:89)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.access$200(DefaultPromise.java:35)
+	at io.netty.util.concurrent.DefaultPromise$1.run(DefaultPromise.java:503)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:262)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:81)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:414)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:929)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:359)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:893)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1319)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:935)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:921)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:907)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:939)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:957)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1263)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	... 3 common frames omitted
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

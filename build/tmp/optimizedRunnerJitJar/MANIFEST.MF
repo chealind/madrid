@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Main-Class: com.madrid.Application
+Class-Path: libs/context-propagation-1.1.2.jar libs/micronaut-validation
+ -4.8.0.jar libs/micronaut-reactor-3.6.0.jar libs/micronaut-serde-jackso
+ n-2.12.0.jar libs/micronaut-serde-support-2.12.0.jar libs/micronaut-ser
+ de-api-2.12.0.jar libs/micronaut-websocket-4.7.6.jar libs/jakarta.valid
+ ation-api-3.1.0.jar libs/logstash-logback-encoder-7.0.1.jar libs/micron
+ aut-http-server-netty-4.7.6.jar libs/micronaut-http-server-4.7.6.jar li
+ bs/micronaut-http-netty-4.7.6.jar libs/micronaut-http-client-core-4.7.6
+ .jar libs/micronaut-router-4.7.6.jar libs/micronaut-jackson-core-4.7.6.
+ jar libs/micronaut-json-core-4.7.6.jar libs/micronaut-http-4.7.6.jar li
+ bs/micronaut-context-propagation-4.7.6.jar libs/micronaut-discovery-cor
+ e-4.7.6.jar libs/micronaut-context-4.7.6.jar libs/micronaut-aop-4.7.6.j
+ ar libs/micronaut-buffer-netty-4.7.6.jar libs/micronaut-inject-4.7.6.ja
+ r libs/logback-classic-1.5.9.jar libs/snakeyaml-2.2.jar libs/jackson-an
+ notations-2.17.2.jar libs/jackson-core-2.17.2.jar libs/jackson-databind
+ -2.17.2.jar libs/jakarta.annotation-api-2.1.1.jar libs/netty-codec-http
+ 2-4.1.115.Final.jar libs/netty-codec-http-4.1.115.Final.jar libs/netty-
+ handler-4.1.115.Final.jar libs/netty-codec-4.1.115.Final.jar libs/netty
+ -transport-native-unix-common-4.1.115.Final.jar libs/netty-transport-4.
+ 1.115.Final.jar libs/netty-buffer-4.1.115.Final.jar libs/netty-resolver
+ -4.1.115.Final.jar libs/netty-common-4.1.115.Final.jar libs/reactor-cor
+ e-3.6.10.jar libs/micronaut-core-reactive-4.7.6.jar libs/reactive-strea
+ ms-1.0.4.jar libs/micronaut-core-4.7.6.jar libs/logback-core-1.5.9.jar 
+ libs/slf4j-api-2.0.16.jar libs/jakarta.inject-api-2.0.1.jar resources/ 
+ classes/
+
