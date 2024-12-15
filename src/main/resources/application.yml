@@ -3,6 +3,19 @@ micronaut:
     name: madrid
   server:
     port: 8081
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+endpoints:
+  metrics:
+    enabled: true
+  prometheus:
+    enabled: true
+    sensitive: false
 ---
 #tag::static-resources[]
 micronaut:
